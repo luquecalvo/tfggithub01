@@ -3,6 +3,7 @@
 on:
   push:
     paths: ['tfe_principal.Rmd']
+    branches: [main, master]
 
 name: render-rmarkdown.yaml
 
