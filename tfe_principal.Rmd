@@ -167,10 +167,10 @@ knitr::write_bib(c("knitr","rmarkdown"),
 ```{r child = 'capitulo03n.Rmd'}
 ```
 
-\FloatBarrier
+<!-- \FloatBarrier -->
 
-```{r child = 'capitulo04n.Rmd'}
-```
+<!-- ```{r child = 'capitulo04n.Rmd'} -->
+<!-- ``` -->
 
 
 <!-- Comentar o eliminar las siguientes líneas si no se necesitan apéndices o anexos -->
