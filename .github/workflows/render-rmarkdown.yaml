@@ -53,5 +53,10 @@ jobs:
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit ${RMD_PATH[*]/.Rmd/.pdf} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
+          # Crear una lista de archivos .pdf generados
+          PDF_PATH=(${RMD_PATH[@]/.Rmd/.pdf})
+          # Añadir archivos .pdf generados al commit
+          git add "${PDF_PATH[@]}"
+          # Realizar el commit solo si hay cambios
+          git commit -m 'Re-build Rmarkdown files' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
