@@ -168,7 +168,7 @@ knitr::write_bib(c("knitr","rmarkdown"),
 ```
 
 <!-- \FloatBarrier -->
-<!-- prueba 2 -->
+<!-- prueba 2,3 -->
 <!-- ```{r child = 'capitulo04n.Rmd'} -->
 <!-- ``` -->
 
