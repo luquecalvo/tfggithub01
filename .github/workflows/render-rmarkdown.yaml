@@ -38,9 +38,7 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: |
-            any::knitr
             any::rmarkdown
-          needs: check
 
       - name: Render Rmarkdown files and Commit Results
         run: |
