@@ -20,7 +20,11 @@ output:
 source("cabecera_chunk_inicio.R")
 ```
 
-# Título del Capítulo
+# Introducción a GitHub Actions
 
-## Primera sección
+## Las primeras pruebas
+
+GitHub Actions es un servicio de integración continua que permite automatizar tareas en un repositorio de GitHub. En este capítulo se presentan las primeras pruebas de GitHub Actions.
+
+
 
